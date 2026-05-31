@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Present Perfect Continuous | PET B1 Teen Lesson</title>
+<style>
+:root{
+  --bg:#07111f;
+  --card:#101d31;
+  --soft:#172a45;
+  --accent:#4da3ff;
+  --gold:#c7a86d;
+  --white:#ffffff;
+  --text:#dce8f7;
+  --muted:#9fb1c7;
+  --good:#45d483;
+  --bad:#ff6b6b;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,Arial,sans-serif;
+  background:linear-gradient(135deg,#07111f,#10213a);
+  color:var(--text);
+}
+header{
+  padding:32px 18px;
+  text-align:center;
+  background:radial-gradient(circle at top,#18375e,#07111f 65%);
+}
+header h1{margin:0;font-size:clamp(28px,5vw,48px);color:var(--white)}
+header p{max-width:850px;margin:14px auto 0;color:var(--muted);font-size:18px}
+.badge{
+  display:inline-block;
+  padding:8px 14px;
+  margin-bottom:12px;
+  border:1px solid var(--gold);
+  color:var(--gold);
+  border-radius:999px;
+  font-weight:700;
+}
+nav{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:#07111fee;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:8px;
+  padding:12px;
+  border-bottom:1px solid #203550;
+}
+nav button{
+  border:0;
+  border-radius:12px;
+  padding:11px 15px;
+  cursor:pointer;
+  background:var(--soft);
+  color:var(--text);
+  font-weight:700;
+}
+nav button.active,nav button:hover{background:var(--accent);color:#07111f}
+main{max-width:1150px;margin:auto;padding:22px}
+.tab{display:none;animation:fade .35s ease}
+.tab.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.card{
+  background:rgba(16,29,49,.95);
+  border:1px solid #243b5e;
+  border-radius:18px;
+  padding:22px;
+  margin:18px 0;
+  box-shadow:0 10px 25px rgba(0,0,0,.18);
+}
+h2{color:var(--gold);margin-top:0}
+h3{color:#86c5ff}
+.note{
+  border-left:5px solid var(--gold);
+  background:#201b10;
+  padding:12px 14px;
+  border-radius:10px;
+  margin:12px 0;
+  color:#ffe9b5;
+}
+.tr{
+  display:block;
+  color:#ffe29a;
+  font-size:14px;
+  margin-top:5px;
+}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.example{
+  background:#0b1728;
+  border:1px solid #1d3555;
+  border-radius:12px;
+  padding:12px;
+  margin:8px 0;
+}
+input,select,textarea{
+  width:100%;
+  border:1px solid #315073;
+  background:#081424;
+  color:var(--white);
+  border-radius:10px;
+  padding:10px;
+  margin:6px 0 12px;
+  font-size:15px;
+}
+textarea{min-height:90px}
+button.action{
+  background:var(--gold);
+  color:#07111f;
+  border:0;
+  border-radius:10px;
+  padding:10px 14px;
+  font-weight:800;
+  cursor:pointer;
+}
+button.action:hover{filter:brightness(1.1)}
+.result{font-weight:800;margin-top:8px}
+.good{color:var(--good)}
+.bad{color:var(--bad)}
+.question{
+  background:#0b1728;
+  border-radius:14px;
+  padding:14px;
+  margin:12px 0;
+  border:1px solid #1d3555;
+}
+.small{color:var(--muted);font-size:14px}
+.kicker{color:var(--accent);font-weight:800}
+details{
+  background:#0b1728;
+  border:1px solid #203b60;
+  padding:12px;
+  border-radius:12px;
+  margin:10px 0;
+}
+summary{cursor:pointer;font-weight:800;color:#86c5ff}
+.reading{
+  line-height:1.75;
+  background:#071321;
+  padding:18px;
+  border-radius:14px;
+  border:1px solid #263d60;
+}
+.scorebox{
+  padding:14px;
+  background:#081424;
+  border:1px solid #315073;
+  border-radius:12px;
+  margin-top:12px;
+}
+footer{text-align:center;color:var(--muted);padding:30px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">PET B1 Grammar Builder</div>
+  <h1>Present Perfect Continuous</h1>
+  <p>Interactive teen-friendly lesson with grammar notes, Turkish side notes, sentence building, reading comprehension, and PET-style speaking practice.</p>
+</header>
+
+<nav>
+  <button class="tabBtn active" onclick="showTab('grammar',this)">Grammar Notes</button>
+  <button class="tabBtn" onclick="showTab('examples',this)">Examples</button>
+  <button class="tabBtn" onclick="showTab('sentence',this)">Sentence Builder</button>
+  <button class="tabBtn" onclick="showTab('reading',this)">Reading</button>
+  <button class="tabBtn" onclick="showTab('speaking',this)">Speaking</button>
+</nav>
+
+<main>
+
+<section id="grammar" class="tab active">
+  <div class="card">
+    <h2>1. Main Meaning</h2>
+    <p>The <b>Present Perfect Continuous</b> connects the past to now. It usually shows an action that started in the past and is still continuing, or an action that has recently stopped but has a visible result now.</p>
+    <div class="note">Turkish note: “Bir süredir yapıyorum / yapmaktayım” anlamına gelir. Türkçedeki “-dır/-dir” veya “bir süredir” fikrine yakındır.</div>
+    <p class="kicker">Form: Subject + have/has + been + verb-ing</p>
+    <div class="grid">
+      <div class="example">I <b>have been studying</b> English for two years.</div>
+      <div class="example">She <b>has been watching</b> videos since 8 p.m.</div>
+      <div class="example">They <b>have been practicing</b> for the PET exam.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>2. Positive, Negative, and Question Forms</h2>
+    <h3>Positive</h3>
+    <p>I/You/We/They <b>have been studying</b>. He/She/It <b>has been studying</b>.</p>
+    <h3>Negative</h3>
+    <p>I/You/We/They <b>haven’t been studying</b>. He/She/It <b>hasn’t been studying</b>.</p>
+    <h3>Question</h3>
+    <p><b>Have</b> you <b>been studying</b>? <b>Has</b> she <b>been studying</b>?</p>
+    <div class="note">Turkish note: “Have/has” burada yardımcı fiildir. Türkçeye genellikle çevrilmez. Ana anlam “been + V-ing” yapısından gelir.</div>
+  </div>
+
+  <div class="card">
+    <h2>3. For and Since</h2>
+    <p>Use <b>for</b> with a period of time: for two hours, for three days, for a long time.</p>
+    <p>Use <b>since</b> with a starting point: since Monday, since 2022, since I was ten.</p>
+    <div class="note">Turkish note: <b>for</b> = ne kadar süredir? <b>since</b> = ne zamandan beri?</div>
+    <div class="grid">
+      <div class="example">I have been learning English <b>for</b> three years.</div>
+      <div class="example">I have been learning English <b>since</b> 2023.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>4. Present Perfect Continuous vs Present Perfect Simple</h2>
+    <p>Use <b>Present Perfect Continuous</b> to focus on the action, duration, effort, or temporary activity.</p>
+    <p>Use <b>Present Perfect Simple</b> to focus on completion, result, number, or achievement.</p>
+    <div class="grid">
+      <div class="example"><b>Continuous:</b> I have been reading this book all week. <br><span class="small">Focus: the activity and time.</span></div>
+      <div class="example"><b>Simple:</b> I have read three chapters. <br><span class="small">Focus: completed amount.</span></div>
+      <div class="example"><b>Continuous:</b> She has been writing emails all morning. <br><span class="small">Focus: effort/activity.</span></div>
+      <div class="example"><b>Simple:</b> She has written five emails. <br><span class="small">Focus: result/number.</span></div>
+    </div>
+    <div class="note">Turkish note: “I have been doing” süreç vurgular. “I have done” sonuç vurgular.</div>
+  </div>
+
+  <div class="card">
+    <h2>5. Common PET B1 Mistakes</h2>
+    <div class="question">❌ I have been know him for years. <br>✅ I have known him for years. <br><span class="small">Some stative verbs are not normally used in continuous forms.</span></div>
+    <div class="question">❌ She has been study since morning. <br>✅ She has been studying since morning.</div>
+    <div class="question">❌ I am studying English since 2022. <br>✅ I have been studying English since 2022.</div>
+    <div class="question">❌ How long do you learn English? <br>✅ How long have you been learning English?</div>
+  </div>
+</section>
+
+<section id="examples" class="tab">
+  <div class="card">
+    <h2>Examples by Meaning</h2>
+
+    <h3>A. Actions continuing until now</h3>
+    <div id="exA"></div>
+
+    <h3>B. Recently stopped actions with present results</h3>
+    <div id="exB"></div>
+
+    <h3>C. Temporary actions around now</h3>
+    <div id="exC"></div>
+
+    <h3>D. Questions with “How long...?”</h3>
+    <div id="exD"></div>
+
+    <h3>E. Present Perfect Simple contrast</h3>
+    <div id="exE"></div>
+  </div>
+</section>
+
+<section id="sentence" class="tab">
+  <div class="card">
+    <h2>Sentence Building Exercises</h2>
+    <p>Write the correct Present Perfect Continuous sentence. Use contractions if you want, but full forms are easier for checking.</p>
+    <div id="builder"></div>
+    <button class="action" onclick="checkBuilder()">Check Answers</button>
+    <div id="builderScore" class="scorebox"></div>
+  </div>
+</section>
+
+<section id="reading" class="tab">
+  <div class="card">
+    <h2>Reading Comprehension: “The Exam Project”</h2>
+    <p class="small">Focus: the difference between Present Perfect Continuous and Present Perfect Simple.</p>
+    <div class="reading">
+      <p>Leo is fifteen, and he has been preparing for the PET exam for nearly six months. At first, he only studied grammar rules, but recently he has been trying to improve his speaking and writing too. His teacher, Ms. Carter, has noticed that Leo has become more confident, especially when he talks about school, hobbies, and future plans.</p>
+      <p>For the last three weeks, Leo has been working on a special English project with two classmates, Maya and Deniz. They have been creating a short video series called “Real English for Teens.” In each video, they explain one useful grammar point and give examples from everyday life. So far, they have recorded four videos, written twelve short dialogues, and uploaded two episodes to their class platform.</p>
+      <p>Maya has been focusing on pronunciation because she often speaks too quickly. She has practiced difficult sounds every evening, and her pronunciation has improved a lot. Deniz has been collecting useful PET vocabulary from films, songs, and online articles. He has already made a vocabulary notebook with more than 120 words and phrases.</p>
+      <p>Leo, however, has been feeling a little tired this week. He has spent many hours editing the videos, and he has not finished the final episode yet. His eyes are red because he has been looking at the computer screen for too long. Ms. Carter told him, “You have done excellent work, but you also need rest. Remember, continuous forms often show effort and duration. Simple perfect forms often show results.”</p>
+      <p>On Friday, the students showed their project to the class. Their classmates loved it. Leo realized something important: he had not just learned grammar; he had been using English to create something real. Since then, he has been speaking more bravely in class, and he has decided to keep making English videos after the PET exam.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Type 1: Multiple Choice</h2>
+    <div id="mcq"></div>
+    <button class="action" onclick="checkReading('mcq')">Check Multiple Choice</button>
+    <div id="mcqScore" class="scorebox"></div>
+  </div>
+
+  <div class="card">
+    <h2>Type 2: True / False</h2>
+    <div id="tf"></div>
+    <button class="action" onclick="checkReading('tf')">Check True / False</button>
+    <div id="tfScore" class="scorebox"></div>
+  </div>
+
+  <div class="card">
+    <h2>Type 3: Short Answer</h2>
+    <p class="small">Write short answers. Your teacher can check these in class.</p>
+    <div id="short"></div>
+    <button class="action" onclick="showSampleAnswers()">Show Sample Answers</button>
+    <div id="sampleAnswers" class="scorebox"></div>
+  </div>
+</section>
+
+<section id="speaking" class="tab">
+  <div class="card">
+    <h2>Speaking Practice for PET B1</h2>
+    <p>Use full answers. Try to include <b>for</b>, <b>since</b>, and real details.</p>
+
+    <h3>Easy Yes/No Questions</h3>
+    <div id="speakEasy"></div>
+
+    <h3>A2 Information Questions</h3>
+    <div id="speakA2"></div>
+
+    <h3>B1 “How long...?” Questions</h3>
+    <div id="speakB1"></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  Built for teen PET B1 preparation · Present Perfect Continuous · Teacher-ready classroom webpage
+</footer>
+
+<script>
+function showTab(id,btn){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.tabBtn').forEach(b=>b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+const examples = {
+exA:[
+"I have been studying English for three years.","She has been learning guitar since January.","They have been playing football for two hours.","We have been living in this city since 2021.","He has been preparing for PET for six months.","I have been reading this book all week.","My brother has been working on his science project since Monday.","The students have been practicing speaking every lesson.","You have been improving your pronunciation recently.","Our class has been using English more often this term."
+],
+exB:[
+"Your clothes are wet. Have you been walking in the rain?","I am tired because I have been studying all evening.","Her eyes are red because she has been crying.","The kitchen smells great. Dad has been cooking.","He is sweaty because he has been running.","The room is messy because we have been making a poster.","My hands are dirty because I have been painting.","The dog is sleepy because it has been playing outside.","You look happy. Have you been talking to your friend?","The computer is hot because it has been working for hours."
+],
+exC:[
+"I have been watching a new series this week.","She has been eating healthier food lately.","We have been learning about the environment this month.","They have been trying a new study method recently.","He has been spending more time with his cousins.","I have been using a new vocabulary app lately.","My friends have been meeting after school this week.","Our teacher has been giving us more speaking tasks recently.","My sister has been going to bed earlier this month.","The team has been training harder this season."
+],
+exD:[
+"How long have you been learning English?","How long has she been preparing for the exam?","How long have they been waiting for the bus?","How long has he been playing tennis?","How long have you been living here?","How long has your friend been studying German?","How long have we been working on this project?","How long has your brother been using that phone?","How long have your parents been working today?","How long has the dog been sleeping?"
+],
+exE:[
+"I have been writing my essay all morning. / I have written two pages.","She has been reading all day. / She has read three chapters.","They have been cleaning the house. / They have cleaned the kitchen.","He has been practicing the song. / He has practiced it ten times.","We have been watching videos. / We have watched five videos.","I have been learning vocabulary. / I have learned twenty new words.","Maya has been making notes. / Maya has made a full list.","Deniz has been collecting words. / Deniz has collected 120 words.","Leo has been editing the video. / Leo has edited two scenes.","The class has been preparing. / The class has prepared a project."
+]
+};
+
+Object.keys(examples).forEach(id=>{
+  document.getElementById(id).innerHTML = examples[id].map(x=>`<div class="example">${x}</div>`).join('');
+});
+
+const builderData = [
+{cue:"I / study / English / for two years", ans:["i have been studying english for two years"]},
+{cue:"She / prepare / for PET / since September", ans:["she has been preparing for pet since september"]},
+{cue:"They / wait / for the bus / for twenty minutes", ans:["they have been waiting for the bus for twenty minutes"]},
+{cue:"He / play / computer games / all afternoon", ans:["he has been playing computer games all afternoon"]},
+{cue:"We / work / on this project / since Monday", ans:["we have been working on this project since monday"]},
+{cue:"You / not listen / to me", ans:["you have not been listening to me","you haven't been listening to me"]},
+{cue:"My sister / learn / French / recently", ans:["my sister has been learning french recently"]},
+{cue:"How long / you / live / here?", ans:["how long have you been living here"]},
+{cue:"Why / he / run?", ans:["why has he been running"]},
+{cue:"The students / practice / speaking / this week", ans:["the students have been practicing speaking this week","the students have been practising speaking this week"]},
+{cue:"I / not sleep / well / lately", ans:["i have not been sleeping well lately","i haven't been sleeping well lately"]},
+{cue:"How long / she / use / this app?", ans:["how long has she been using this app"]}
+];
+
+document.getElementById('builder').innerHTML = builderData.map((q,i)=>`
+  <div class="question">
+    <b>${i+1}. ${q.cue}</b>
+    <input id="build${i}" placeholder="Write the full sentence..." />
+    <div id="buildRes${i}" class="result"></div>
+  </div>`).join('');
+
+function clean(s){return s.toLowerCase().replace(/[?.!,]/g,'').replace(/\s+/g,' ').trim();}
+function checkBuilder(){
+  let score=0;
+  builderData.forEach((q,i)=>{
+    const val=clean(document.getElementById('build'+i).value);
+    const ok=q.ans.map(clean).includes(val);
+    if(ok){score++;document.getElementById('buildRes'+i).innerHTML='<span class="good">Correct ✅</span>'}
+    else{document.getElementById('buildRes'+i).innerHTML='<span class="bad">Check again. Example: '+q.ans[0]+'.</span>'}
+  });
+  document.getElementById('builderScore').innerHTML=`Score: <b>${score}/${builderData.length}</b>`;
+}
+
+const mcqData = [
+["How long has Leo been preparing for PET?",["Nearly six months","Three weeks","Since Friday"],0],
+["What have the students created?",["A video series","A song","A sports club"],0],
+["How many videos have they recorded?",["Two","Four","Twelve"],1],
+["Why are Leo’s eyes red?",["He has been looking at the screen too long","He has read three books","He has been running"],0],
+["Which sentence focuses on result?",["He has been editing videos","He has edited two episodes","He has been feeling tired"],1],
+["What has Deniz made?",["A vocabulary notebook","A grammar test","A PET certificate"],0]
+];
+const tfData = [
+["Leo has been preparing for PET for nearly six months.",true],
+["Maya has been focusing on vocabulary.",false],
+["Deniz has collected more than 120 words and phrases.",true],
+["Leo has finished the final episode.",false],
+["The project helped Leo use English for a real purpose.",true],
+["Present Perfect Continuous often shows duration and effort.",true]
+];
+
+document.getElementById('mcq').innerHTML = mcqData.map((q,i)=>`
+<div class="question"><b>${i+1}. ${q[0]}</b>
+${q[1].map((o,j)=>`<label><input type="radio" name="mcq${i}" value="${j}"> ${o}</label><br>`).join('')}
+<div id="mcqRes${i}" class="result"></div></div>`).join('');
+
+document.getElementById('tf').innerHTML = tfData.map((q,i)=>`
+<div class="question"><b>${i+1}. ${q[0]}</b>
+<label><input type="radio" name="tf${i}" value="true"> True</label><br>
+<label><input type="radio" name="tf${i}" value="false"> False</label>
+<div id="tfRes${i}" class="result"></div></div>`).join('');
+
+const shortQs = [
+"Why has Leo become more confident?",
+"What has Maya been practicing?",
+"What has Deniz been collecting?",
+"What has Leo spent many hours doing?",
+"What did Ms. Carter say about continuous forms?",
+"Why does Leo want to keep making videos?"
+];
+document.getElementById('short').innerHTML = shortQs.map((q,i)=>`
+<div class="question"><b>${i+1}. ${q}</b><textarea placeholder="Write your answer..."></textarea></div>`).join('');
+
+function checkReading(type){
+  let data = type==='mcq'?mcqData:tfData;
+  let score=0;
+  data.forEach((q,i)=>{
+    const checked=document.querySelector(`input[name="${type}${i}"]:checked`);
+    let ok=false;
+    if(checked){
+      if(type==='mcq') ok=Number(checked.value)===q[2];
+      else ok=(checked.value==='true')===q[1];
+    }
+    if(ok){score++;document.getElementById(type+'Res'+i).innerHTML='<span class="good">Correct ✅</span>'}
+    else{document.getElementById(type+'Res'+i).innerHTML='<span class="bad">Not quite. Try again.</span>'}
+  });
+  document.getElementById(type+'Score').innerHTML=`Score: <b>${score}/${data.length}</b>`;
+}
+function showSampleAnswers(){
+  const answers=[
+  "Because he has been preparing regularly and using English more actively.",
+  "She has been practicing difficult pronunciation sounds every evening.",
+  "He has been collecting useful PET vocabulary from films, songs, and online articles.",
+  "He has spent many hours editing the videos.",
+  "She said continuous forms often show effort and duration, while simple perfect forms often show results.",
+  "Because he realized he could use English to create something real."
+  ];
+  document.getElementById('sampleAnswers').innerHTML=answers.map((a,i)=>`<p><b>${i+1}.</b> ${a}</p>`).join('');
+}
+
+const speakEasy=[
+"Have you been studying English this week?",
+"Have you been watching any interesting videos recently?",
+"Have you been practicing speaking at home?"
+];
+const speakA2=[
+"What have you been doing after school recently?",
+"What game or app have you been using a lot lately?",
+"What subject have you been studying the most this month?",
+"Who have you been spending time with recently?",
+"What have you been doing to improve your English?"
+];
+const speakB1=[
+"How long have you been learning English?",
+"How long have you been preparing for exams?",
+"How long have you been using your phone today?",
+"How long have you been living in your city?",
+"How long have you been going to your current school?",
+"How long have you been studying with your English teacher?",
+"How long have you been interested in your favorite hobby?",
+"How long have you been watching your favorite series?",
+"How long have you been trying to improve your speaking?",
+"How long have you been working on your biggest school goal?"
+];
+
+function makeSpeaking(arr,id,tip){
+  document.getElementById(id).innerHTML=arr.map((q,i)=>`
+  <details><summary>${i+1}. ${q}</summary>
+  <p class="small">${tip}</p>
+  <textarea placeholder="Write notes before speaking..."></textarea>
+  </details>`).join('');
+}
+makeSpeaking(speakEasy,'speakEasy','Answer: Yes, I have. / No, I haven’t. Add one reason.');
+makeSpeaking(speakA2,'speakA2','Use: Recently, I have been... / Lately, I have been...');
+makeSpeaking(speakB1,'speakB1','Use: I have been ... for/since ... Add details and examples.');
+</script>
+</body>
+</html>
